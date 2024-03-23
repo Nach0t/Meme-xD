@@ -20,6 +20,8 @@ def procesar_y_predecir_imagen(image_path="COCO.png"):
             print(f"{i + 1}: {label} ({score:.2f})")
     except tf.errors.NotFoundError:
         print("Ocurrido un error fatal.")
+        a = input("Presiona una tecla para continuar...")
         return False
-
+    a = input("Presiona una tecla para continuar...")
     return True
+   

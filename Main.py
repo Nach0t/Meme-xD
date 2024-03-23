@@ -36,3 +36,5 @@ if resultado:
             print("Opción inválida")
 
     calcular()
+    a = input("Presiona una tecla para continuar...")
+
