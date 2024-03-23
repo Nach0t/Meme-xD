@@ -19,7 +19,7 @@ def procesar_y_predecir_imagen(image_path="COCO.png"):
         for i, (imagenet_id, label, score) in enumerate(decoded_predictions[0]):
             print(f"{i + 1}: {label} ({score:.2f})")
     except tf.errors.NotFoundError:
-        print(f"El archivo {image_path} no existe.")
+        print("Ocurrido un error fatal.")
         return False
 
     return True
