@@ -8,6 +8,14 @@ Inspired by the whimsical world of internet memes, particularly those from Team 
 
 Next, download the latest release of the Meme-xD project from the following link:
 
+```bash
+pip install tensorflow
+```
+
 [Meme-xD Version 1.0.0](https://github.com/Nach0t/Meme-xD/releases/download/1.0.0/Meme-xD.zip.rar)
 
 Unpack the .rar file in your preferred directory.
+
+
+
+##"This archive includes an executable (.exe) file, providing a convenient option for users who do not have Python installed."
