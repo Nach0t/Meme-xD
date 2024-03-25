@@ -8,6 +8,7 @@ Inspired by the whimsical world of internet memes, particularly those from Team 
 
 To get started, ensure you have Python and TensorFlow installed. Install TensorFlow using the command:
 
+```bash
 pip install tensorflow
 
 Next, download the latest release of the Meme-xD project from the following link:
