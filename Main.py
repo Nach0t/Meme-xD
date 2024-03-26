@@ -1,40 +1,29 @@
 import fuente
+import calcular
 
 # Imaginemos que "fuente" tiene una función para verificar si el archivo existe y procesarlo
 resultado = fuente.procesar_y_predecir_imagen()
+cal1 = calcular.calcular_basico()
+cal1 = calcular.calcular_avanzado()
 
 if resultado:
-    def calcular():
-        print("Calculadora Simple en Python")
-        print("Selecciona una operación:")
-        print("1. Suma")
-        print("2. Resta")
-        print("3. Multiplicación")
-        print("4. División")
-        
-        opcion = input("Ingrese el número de operación deseado (1/2/3/4): ")
-        if opcion == '1':
-            num1 = float(input("Ingrese el primer número: "))
-            num2 = float(input("Ingrese el segundo número: "))
-            print("Resultado:", num1 + num2)
-        elif opcion == '2':
-            num1 = float(input("Ingrese el primer número: "))
-            num2 = float(input("Ingrese el segundo número: "))
-            print("Resultado:", num1 - num2)
-        elif opcion == '3':
-            num1 = float(input("Ingrese el primer número: "))
-            num2 = float(input("Ingrese el segundo número: "))
-            print("Resultado:", num1 * num2)
-        elif opcion == '4':
-            num1 = float(input("Ingrese el primer número: "))
-            num2 = float(input("Ingrese el segundo número: "))
-            if num2 != 0:
-                print("Resultado:", num1 / num2)
-            else:
-                print("Error: No se puede dividir por cero.")
-        else:
-            print("Opción inválida")
+    print("Imagen procesada con éxito.")
+    while True:  # Esto permitirá que el menú se repita hasta que el usuario decida salir.
+        print("\nSeleccione el tipo de calculadora a usar o salir:")
+        opcion = input("Escriba 'basico' para cálculos básicos, 'avanzado' para cálculos avanzados o 'salir' para terminar: ").lower()
 
-    calcular()
-    a = input("Presiona una tecla para continuar...")
+        if opcion == 'basico':
+            # Llama a la función de cálculo básico
+            calcular.calcular_basico()
+        elif opcion == 'avanzado':
+            # Llama a la función de cálculo avanzado
+            calcular.calcular_avanzado()
+        elif opcion == 'salir':
+            print("Saliendo del programa.")
+            break  # Sale del bucle while y termina el programa.
+        else:
+            print("Opción no reconocida.")
+
+    # Este input se mostrará solo después de que el usuario haya decidido salir del bucle.
+    input("Presiona cualquier tecla para continuar...")
 
