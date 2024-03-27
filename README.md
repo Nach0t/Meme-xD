@@ -3,6 +3,7 @@
 ## Overview
 
 Inspired by Team Fortress 2 and the coconut meme.
+so I created this calculator that only works if coco.png exists
 
 ## Installation
 
